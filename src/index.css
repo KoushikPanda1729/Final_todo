@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 95%;
+    margin: auto;
+}
+
+.heading {
+    margin: 1rem;
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.todoForm {
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.todoForm input {
+    font-size: 1.2rem;
+    background-color: rgb(204, 205, 206);
+    border: none;
+    outline: none;
+    padding-left: 0.6rem;
+    text-transform: capitalize;
+}
+
+.todoForm button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.todoStyle {
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.title-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.remove {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.remove:hover {
+   color: red;
+   transition: 0.7s;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: rgb(91, 233, 91);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: rgb(91, 233, 91);
+}
+
+
+
+.todoForm button:active{
+    background-color:  rgb(91, 233, 91);
+    color: black;
+    transition: 0.2s;
+}
